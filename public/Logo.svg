@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200">
+  <!-- Dark background -->
+  <rect width="450" height="200" fill="#0a0b15" rx="8" ry="8"/>
+  
+  <!-- Logo text -->
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="60" font-weight="700">
+    <tspan fill="#ffffff">Git</tspan><tspan fill="#9966ff">Hired</tspan>
+  </text>
+  
+  <!-- Code branch icon -->
+  <path d="M70 100 C70 90, 60 80, 50 80 C40 80, 30 90, 30 100 C30 110, 40 120, 50 120 C55 120, 60 117, 63 112" stroke="#9966ff" stroke-width="5" fill="none"/>
+  <circle cx="50" cy="80" r="8" fill="#ffffff"/>
+  <circle cx="50" cy="120" r="8" fill="#ffffff"/>
+  <circle cx="70" cy="100" r="8" fill="#9966ff"/>
+  
+  <!-- Sparkle elements -->
+  <path d="M400 70 L410 80 L400 90 L390 80 Z" fill="#9966ff"/>
+  <path d="M380 110 L385 115 L380 120 L375 115 Z" fill="#ffffff"/>
+  <path d="M420 100 L423 103 L420 106 L417 103 Z" fill="#ffffff"/>
+</svg>
