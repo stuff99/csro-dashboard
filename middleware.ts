@@ -2,7 +2,7 @@ import authConfig from "./auth.config"
 import NextAuth from "next-auth"
 const {auth}=NextAuth(authConfig)
 import { publicRoutes , authRoutes, apiAuthPrefix, DEFAULT_LOGIN_USER_REDIRECT} from "@/routes"
-
+import { NextResponse } from "next/server"
 export default auth((req)=>{
     const isLoggedIn = !!req.auth;
     const {nextUrl} = req
@@ -19,14 +19,14 @@ export default auth((req)=>{
     // if user not logged in and is in auth pages(login or register), do nothing
     if (isAuthRoute) {
         if (isLoggedIn) {
-            return Response.redirect(new URL(DEFAULT_LOGIN_USER_REDIRECT,nextUrl))
+            return NextResponse.redirect(new URL(DEFAULT_LOGIN_USER_REDIRECT,nextUrl))
         }
         return
     }
     //if user not logged in and is in protected routes, redirect the user to login
 
     if(!isLoggedIn && !isPublicRoute){
-        return Response.redirect(new URL("/login",nextUrl))
+        return NextResponse.redirect(new URL("/login",nextUrl))
     }
     return
 })
