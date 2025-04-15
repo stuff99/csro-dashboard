@@ -303,8 +303,10 @@ This starter is designed to be easily customizable:
   npx prisma db push
   ```
 
-  
+## ☕ Buy Me a Coffee
 
+If you found this project helpful, consider supporting me: <3
+[buymeacoffee.com/bhaveshxd](https://buymeacoffee.com/bhaveshxd)
 
 
 
