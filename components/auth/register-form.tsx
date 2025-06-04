@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { CardWrapper } from './card-wrapper'
 import { zodResolver } from "@hookform/resolvers/zod"
-import { set, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import * as z from 'zod'
 import { RegisterSchema } from "@/schema"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'

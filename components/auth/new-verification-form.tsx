@@ -23,7 +23,7 @@ export const NewVerificationForm = () => {
         newVerification(token).then((response) => {
             setError(response?.error);
             setSuccess(response?.success);
-        }).catch((error) => {
+        }).catch(() => {
             setError("Something went wrong");
         }
         );
